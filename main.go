@@ -12,7 +12,7 @@ func main() {
 
 	r.GET("/", root.Index)
 
-	if err := r.Run("lan-ip.ast.moe:80"); err != nil {
+	if err := r.Run(":8080"); err != nil {
 		log.Fatal(err)
 	}
 }
