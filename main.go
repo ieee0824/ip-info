@@ -10,8 +10,8 @@ import (
 )
 
 func main() {
-	host := flag.String("h", "", "host")
-	port := flag.String("p", "8080", "port")
+	host := flag.String("host", "", "host")
+	port := flag.String("port", "8080", "port")
 	withSSL := flag.Bool("ssl", false, "use ssl")
 	cert := flag.String("cert", "", "ssl cert")
 	key := flag.String("key", "", "ssl key")
